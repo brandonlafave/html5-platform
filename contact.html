@@ -8,7 +8,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
     <body>
-        <header>
+        <header role="banner">
             <h1>Contact Thought</h1>
             <nav>
                 <ul role="navigation">
@@ -18,20 +18,20 @@
             </nav>
         </header>
 
-        <main>
+        <main role="main">
             <h3>Please contact us!</h3>
                 <form>
                     <label>Name:</label>
-                    <input name="name" id="name" type="text" value="" /><br>
+                    <input aria-label="Enter your name" name="name" id="name" type="text" value="" /><br>
                     <label>Email:</label>
-                    <input name="email" id="email" type="text" value=""/><br>
+                    <input aria-label="Enter your email" name="email" id="email" type="text" value=""/><br>
                     <label>Comment:</label>
-                    <textarea name="comment" id="comment"></textarea><br>
+                    <textarea aria-label="Enter your comment" name="comment" id="comment"></textarea><br>
                     <button id="submit">Submit</button>
                 </form>
         </main>
 
-         <footer>
+         <footer role="contentinfo">
             <p>&copy; Copyright 2015</p>
         </footer>
     </body>
