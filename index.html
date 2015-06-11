@@ -6,9 +6,11 @@
         <title>HTML5 Semantics Website</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link type="text/css"  href="css/normalize.css" rel="stylesheet"/>
+        <link type="text/css"  href="css/app.css" rel="stylesheet"/>
     </head>
     <body>
-        <header role="banner">
+        <header role="banner" id="article-size">
             <h1>Deep Thought</h1>
             <nav>
                 <ul role="navigation">
@@ -20,7 +22,7 @@
 
         <main role="main">
             <article role="article">
-                <video controls="">
+                <video id="index-video" height="500" width="auto" controls="">
                     <source src="video/dancingChicken.mp4" type="video/webm"></scource>
                     <source src="video/dancingChicken.mp4" type="video/mp4"></source>
                 </video>
