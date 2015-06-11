@@ -1,0 +1,13 @@
+CACHE MANIFEST
+# 2015-06-11:v1.0
+
+index.html
+blog.html
+contact.html
+css/stylesheet.css
+js/selfie.js
+video/dancingChicken.mp4
+audio/dubStepBra.mp3
+
+NETWORK:
+order.html
