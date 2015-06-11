@@ -1,5 +1,5 @@
 <!doctype html>
-<html manifest="localhost:8000/manifest.mf" class="no-js" lang="">
+<html id="localStorage" method="post" action="" class="no-js" lang="">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
@@ -35,61 +35,61 @@
     </header>
 
     <main role="main">
-      <form>
+      <form id="localStorageTest" method="post" action="">
         <fieldset id="contact">
           <legend>Contact Info</legend>
           <label for="name">Full Name:</label>
-          <input aria-label="Name Field" name="name" id="name" type="text" value="" placeholder="your full name" required/>
+          <input class="stored" aria-label="Name Field" name="name" id="name" type="text" value="" placeholder="your full name" required/>
           <label for="email">Email:</label>
-          <input aria-label="Email Field" name="email" id="email" type="email" value="" placeholder="your_email@gmail.com" required/>
+          <input class="stored" aria-label="Email Field" name="email" id="email" type="email" value="" placeholder="your_email@gmail.com" required/>
           <label for="phone">Phone Number:</label>
-          <input arial-label="Phone Number Field" name="phone" id="phone" type="tel" value="" placeholder="2061231234" maxlength="10" required/>
+          <input class="stored" arial-label="Phone Number Field" name="phone" id="phone" type="tel" value="" placeholder="2061231234" maxlength="10" required/>
         </fieldset>
         <fieldset id="shipping">
           <legend>Shipping Address</legend>
           <label for="street">Street:</label>
-          <input aria-label="Street Field" name="street" id="ship-street" type="text" value="" placeholder="4471 11th Ave NE" required/>
+          <input class="stored" aria-label="Street Field" name="street" id="ship-street" type="text" value="" placeholder="4471 11th Ave NE" required/>
           <label for="apt">Apt:</label>
-          <input aria-label="Apt Number" name="apt" id="ship-apt" type="text" value="" placeholder="25" require/>
+          <input class="stored" aria-label="Apt Number" name="apt" id="ship-apt" type="text" value="" placeholder="25" require/>
           <label for="city">City:</label>
-          <input aria-label="City" name="city" id="ship-city" type="text" value="" placeholder="Seattle" require/>
+          <input class="stored" aria-label="City" name="city" id="ship-city" type="text" value="" placeholder="Seattle" require/>
           <label for="state">State:</label>
-          <input aria-label="State" name="state" id="ship-state" type="text"
+          <input class="stored" aria-label="State" name="state" id="ship-state" type="text"
           value="" placeholder="Washington" require/>
           <label for="zip">Zip-Code:</label>
-          <input aria-label="Zip Code" name="zip" id="ship-zip" type="number" value="" placeholder="98105" requre/>
+          <input class="stored" aria-label="Zip Code" name="zip" id="ship-zip" type="number" value="" placeholder="98105" requre/>
         </fieldset>
         <fieldset id="payement">
           <legend>Payment Info</legend>
           <label for="visa">Visa</label>
-          <input aria-label="Visa" name="visa" id="visa" type="radio"/>
+          <input class="stored" aria-label="Visa" name="visa" id="visa" type="radio"/>
           <label for="mastercard">Mastercard</label>
-          <input aria-label="Mastercard" name="mastercard" id="mastercard" type="radio"/>
+          <input class="stored" aria-label="Mastercard" name="mastercard" id="mastercard" type="radio"/>
           <label for="amex">American Express</label>
-          <input aria-label="American Express" name="amex" id="amex" type="radio"/>
+          <input class="stored" aria-label="American Express" name="amex" id="amex" type="radio"/>
           <label for="cardholder">Cardholder Name</label>
-          <input aria-label="Cardholder Name" name="cardholder" id="card-holder" type="text" value="" placeholder="John T Doe" required/>
+          <input class="stored" aria-label="Cardholder Name" name="cardholder" id="cardholder" type="text" value="" placeholder="John T Doe" required/>
           <label for="cardnumber">Card Number</label>
-          <input aria-label="Card Number" name="cardnumber" id="card-number" type="number" value="" placeholder="xxxxxxxxxxxxxxxx" autocomplete="off" required/>
+          <input aria-label="Card Number" name="cardnumber" id="cardnumber" type="number" value="" placeholder="xxxxxxxxxxxxxxxx" autocomplete="off" required/>
           <label for="securitycode">Security Code</label>
           <input aria-label="Security Number" name="securtitycode" id="security-code" type="number" value="" placeholder="xxx" autocomplete="off" required/>
           <label for="expiration">Expiration Date</label>
-          <input aria-label="Expiration Date" name="expiration" id="expiration" type="number" value="" placeholder="xx/xx" autocomplete="off" required/>
+          <input class="stored" aria-label="Expiration Date" name="expiration" id="expiration" type="number" value="" placeholder="xx/xx" autocomplete="off" required/>
           <fieldset id="billing">
             <legend>Billing Address</legend>
             <label for="sameaddress">Billing is same as Shipping</label>
-            <input aria-label="Same Address" name="sameaddress" id="same-address" type="checkbox"/>
+            <input class="b_stored" aria-label="Same Address" name="b_sameaddress" id="same-address" type="checkbox"/>
             <label for="street">Street:</label>
-            <input aria-label="Street Fiel d" name="street" id="billing-street" type="text" value="" placeholder="4471 11th Ave NE" required/>
+            <input class="b_stored" aria-label="Street Field" name="b_street" id="billing-street" type="text" value="" placeholder="4471 11th Ave NE" required/>
             <label for="apt">Apt:</label>
-            <input aria-label="Apt Number" name="apt" id="billing-apt" type="text" value="" placeholder="25" require/>
+            <input class="b_stored" aria-label="Apt Number" name="b_apt" id="billing-apt" type="text" value="" placeholder="25" require/>
             <label for="city">City:</label>
-            <input aria-label="City" name="city" id="billing-city" type="text" value="" placeholder="Seattle" require/>
+            <input class="b_stored" aria-label="City" name="b_city" id="billing-city" type="text" value="" placeholder="Seattle" require/>
             <label for="state">State:</label>
-            <input aria-label="State" name="state" id="billing-state" type="text"
+            <input class="b_stored" aria-label="State" name="b_state" id="billing-state" type="text"
             value="" placeholder="Washington" require/>
             <label for="zip">Zip-Code:</label>
-            <input aria-label="Zip Code" name="zip" id="billing-zip" type="number" value="" placeholder="98105" requre/>
+            <input class="b_stored" aria-label="Zip Code" name="b_zip" id="billing-zip" type="number" value="" placeholder="98105" requre/>
           </fieldset>
         </fieldset>
         <button id="submit">Submit</button>
@@ -99,8 +99,8 @@
     <footer role="contentinfo">
       <p>&copy; Copyright 2015</p>
     </footer>
-    <script href="http://ajax.googleapis.com/ajax/libs/jquery/1.2.6/jquery.js" />
-    <script src="localStorage.js" />
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js"></script>
+    <script type="text/javascript" src="js/localStorage.js"></script>
   </body>
 
 </html>
