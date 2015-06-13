@@ -7,24 +7,38 @@ form {
   background-color: hsla(0, 0%, 100%, 0.4);
   border-radius: .5em;
   padding: 1em;
+  color: hsla(0, 0%, 24%, 1.0);
+}
+
+legend {
+  font-size: 1.2em;
+  letter-spacing: .1em;
 }
 
 fieldset {
   border-radius: .5em;
   margin-bottom: 1em;
   padding: 1em;
-  border: 1px solid hsla(185, 8%, 87%, 0.0);
   box-shadow: none;
+  border: .1em solid hsla(0, 0%, 75%, 0.5);
   background-color: hsla(0, 0%, 100%, 0.5);
 }
 
 label {
   font-size: .9em;
   font-weight: bolder;
-  color: hsla(0, 0%, 24%, 1.0);
+  letter-spacing: .02em;
 }
 
-input {
+select {
+  display: block;
+  margin-top: 1em;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 1em;
+}
+
+input:not(#same-address) {
   margin-top: 1em;
   margin-right: auto;
   margin-bottom: 1em;
@@ -45,20 +59,17 @@ textarea {
 }
 
 hr {
-  border: .1em solid hsla(0, 0%, 75%, 0.5);
+  border-top: .1em solid hsla(0, 0%, 75%, 0.5);
+  border-bottom: none;
+  border-left: none;
+  border-right: none;
   width: 50%;
   margin-bottom: .5em;
 }
 
-#contact-header h2 {
-  font-weight: lighter;
-  letter-spacing: .01em;
-  margin: 0;
-  padding: .5em;
-}
-
-#contact-header {
-  width: 50%;
+#credit-cards {
+  border: 1px solid black;
+  display: inline;
 }
 
 #submit {
@@ -77,8 +88,20 @@ hr {
   color: white;
 }
 
-.contact-form {
-  display: none;
+#place-order {
+  font-size: 1.5em;
+  color: white;
+  background-color: hsla(214, 100%, 55%, 0.7);
+  padding: .5em;
+  border-radius: .5em;
+  border: .05em solid hsla(214, 100%, 55%, 0.0);
+  margin: .5em 0 .5em 0;
+  cursor: pointer;
+}
+
+#place-order:hover {
+  background-color: hsla(135, 99%, 42%, 1.0);
+  color: white;
 }
 
 .form-size {
@@ -87,4 +110,32 @@ hr {
   margin-right: auto;
   background-color: hsla(0, 0%, 100%, 0.5);
   border-radius: .5em;
+}
+
+.contact-form {
+  display: none;
+}
+
+.form-header h2 {
+  font-weight: lighter;
+  letter-spacing: .01em;
+  margin: 0;
+  padding: .5em;
+}
+
+.form-header {
+  width: 50%;
+}
+
+.form-footer {
+  width: 92%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.form-footer h2 {
+  font-weight: lighter;
+  letter-spacing: .01em;
+  margin: 0;
+  padding: .5em;
 }
