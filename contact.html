@@ -1,17 +1,19 @@
 <!doctype html>
 <html manifest="http://www.example.com/example.mf" class="no-js" lang="">
+
   <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title></title>
+    <title>Contact Us!</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link type="text/css"  href="css/normalize.css" rel="stylesheet"/>
-    <link type="text/css"  href="css/app.css" rel="stylesheet"/>
+    <link type="text/css" href="css/normalize.css" rel="stylesheet"/>
+    <link type="text/css" href="css/app.css" rel="stylesheet"/>
+    <link type="text/css" href="css/forms.css" rel="stylesheet"/>
   </head>
 
   <body>
-    <header role="banner" id="form-size">
+    <header role="banner" class="form-size">
       <h1>Contact Thought</h1>
       <nav>
         <ul role="navigation">
@@ -35,17 +37,19 @@
     </header>
 
     <main role="main">
-      <article>
-        <p>Please let us know what you think!</p>
+      <article id="contact-header">
+        <h2>Let us know what you think!</h2>
       </article>
       <form>
         <fieldset id="contact">
-          <legend>Contact Info</legend>
-          <label for="name">Full Name:</label>
+          <legend class="contact-form">Contact Info</legend>
+          <label for="name">Name</label>
           <input aria-label="Name Field" name="name" id="name" type="text" value="" placeholder="your full name" required/>
-          <label for="email">Email:</label>
+          <hr>
+          <label for="email">Email</label>
           <input aria-label="Email Field" name="email" id="email" type="email" value="" placeholder="your_email@gmail.com" required/>
-          <label>Comment:</label>
+          <hr>
+          <label>Please Comment</label>
           <textarea aria-label="Comment Field" name="comment" id="comment"></textarea>
         </fieldset>
         <button id="submit">Submit</button>
