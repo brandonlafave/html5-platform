@@ -8,6 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link type="text/css"  href="css/normalize.css" rel="stylesheet"/>
     <link type="text/css"  href="css/app.css" rel="stylesheet"/>
+    <link type="text/css" href="css/forms.css" rel="stylesheet"/>
   </head>
 
   <body>
@@ -35,7 +36,14 @@
     </header>
 
     <main role="main">
+<<<<<<< HEAD
       <form id="localStorageTest" method="post" action="">
+=======
+      <article class="form-header">
+        <h2>Please complete your order.</h2>
+      </article>
+      <form>
+>>>>>>> 2a3e3cca2b42546fe9fa6f71882530cdd17cdd79
         <fieldset id="contact">
           <legend>Contact Info</legend>
           <label for="name">Full Name:</label>
@@ -61,6 +69,7 @@
         </fieldset>
         <fieldset id="payement">
           <legend>Payment Info</legend>
+<<<<<<< HEAD
           <label for="visa">Visa</label>
           <input class="stored" aria-label="Visa" name="visa" id="visa" type="radio"/>
           <label for="mastercard">Mastercard</label>
@@ -69,16 +78,36 @@
           <input class="stored" aria-label="American Express" name="amex" id="amex" type="radio"/>
           <label for="cardholder">Cardholder Name</label>
           <input class="stored" aria-label="Cardholder Name" name="cardholder" id="cardholder" type="text" value="" placeholder="John T Doe" required/>
+=======
+          <label for="cardtype">Card Type</label>
+          <select id="cardtype" name="select">
+            <option value="1">Visa</option>
+            <option value="2">Mastercard</option>
+            <option value="3">American Express</option>
+          </select>
+          <label for="cardholder">Cardholder Name</label>
+          <input aria-label="Cardholder Name" name="cardholder" id="card-holder" type="text" value="" placeholder="Optimus L Yarnspinner" required/>
+>>>>>>> 2a3e3cca2b42546fe9fa6f71882530cdd17cdd79
           <label for="cardnumber">Card Number</label>
           <input aria-label="Card Number" name="cardnumber" id="cardnumber" type="number" value="" placeholder="xxxxxxxxxxxxxxxx" autocomplete="off" required/>
           <label for="securitycode">Security Code</label>
           <input aria-label="Security Number" name="securtitycode" id="security-code" type="number" value="" placeholder="xxx" autocomplete="off" required/>
           <label for="expiration">Expiration Date</label>
+<<<<<<< HEAD
           <input class="stored" aria-label="Expiration Date" name="expiration" id="expiration" type="number" value="" placeholder="xx/xx" autocomplete="off" required/>
           <fieldset id="billing">
             <legend>Billing Address</legend>
             <label for="sameaddress">Billing is same as Shipping</label>
             <input class="b_stored" aria-label="Same Address" name="b_sameaddress" id="same-address" type="checkbox"/>
+=======
+          <input aria-label="Expiration Date" name="expiration" id="expiration" type="number" value="" placeholder="xx/xx" autocomplete="off" required/>
+          <fieldset>
+            <label for="sameaddress">Billing address is same as shipping</label>
+            <input aria-label="Same Address" name="sameaddress" id="same-address" type="checkbox"/>
+          </fieldset>
+          <fieldset id="billing">
+            <legend>Billing Address</legend>
+>>>>>>> 2a3e3cca2b42546fe9fa6f71882530cdd17cdd79
             <label for="street">Street:</label>
             <input class="b_stored" aria-label="Street Field" name="b_street" id="billing-street" type="text" value="" placeholder="4471 11th Ave NE" required/>
             <label for="apt">Apt:</label>
@@ -92,7 +121,10 @@
             <input class="b_stored" aria-label="Zip Code" name="b_zip" id="billing-zip" type="number" value="" placeholder="98105" requre/>
           </fieldset>
         </fieldset>
-        <button id="submit">Submit</button>
+        <article class="form-footer">
+        <h2>Thank You!</h2>
+        </article>
+        <button id="place-order">Confirm Order</button>
       </form>
     </main>
 
